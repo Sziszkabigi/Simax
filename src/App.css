@@ -25,7 +25,7 @@ header {
   display: grid;
   grid-template:
     "logo nav " 50px/
-    600px 500px;
+    1fr 1fr;
   /*background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0) 0%,
@@ -50,18 +50,44 @@ header {
 
 /* *logo* */
 logo {
-  background-image: ;
+  margin-top: 20px;
+  margin-left: 100px;
+  color: white;
+  font-size: 30px;
 }
 
+.logo-image {
+  position: relative;
+  bottom: -8px;
+}
 .nav {
   display: flex;
 }
+
 .menu {
   display: flex;
+  margin-top: 30px;
+  color: white;
 }
+
 .menu-item {
-  margin: 3px;
+  margin: 10px;
   list-style: none;
+}
+.menu-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.hero-content {
+  position: relative;
+  top: 20%;
+  left: 100%;
+  color: white;
+}
+.hero-content h1 {
+  marhin: 5px;
+  font-size: 55px;
 }
 
 /* ***** Card ****** */
@@ -71,6 +97,7 @@ logo {
   align-items: center;
   justify-content: center;
 }
+
 .filter-item {
   margin: 10px;
 }
