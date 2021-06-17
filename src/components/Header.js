@@ -3,7 +3,10 @@ import { React } from "react";
 function Header() {
   return (
     <header>
-      <logo>This is the Logo </logo>
+      <logo>
+        <img src="./assets/simax_mapmark_normal.svg" alt="logo" width="40px" />
+        <span>Simax </span>
+      </logo>
       <nav>
         <ul className="menu">
           <li className="menu-item"> 1 </li>
