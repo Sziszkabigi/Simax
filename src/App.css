@@ -1,0 +1,70 @@
+@import url: "./style.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ***** Container ****** */
+
+.container {
+  display: grid;
+  /*grid-template:
+    /*"header" header heade 50px
+    "main main main " 1fr
+    "footer footer footer" 50px /
+    150px 1fr 150px;
+  /*grid-template-columns: 200px,1fr,200px; */
+  /*grid-template-columns: repeat(3, 1fr) */
+  width: 100vw;
+  grid-gap: 5px;
+}
+/* ***** Header ****** */
+
+header {
+  display: grid;
+  grid-template:
+    "logo nav " 50px/
+    600px 500px;
+  background-color: yellow;
+}
+
+.nav {
+  display: flex;
+}
+.menu {
+  display: flex;
+}
+.menu-item {
+  margin: 3px;
+  list-style: none;
+}
+
+/* ***** Card ****** */
+
+.filter-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-item {
+  margin: 10px;
+}
+
+/* ***** Card ****** */
+
+main {
+  background-color: pink;
+  display: grid;
+  grid-area: "";
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 50px;
+  padding: 10px;
+}
+
+/* ***** Emphasized ****** */
+
+.emphasized-box {
+  background-color: lightblue;
+}
