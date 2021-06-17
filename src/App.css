@@ -26,7 +26,11 @@ header {
   grid-template:
     "logo nav " 50px/
     600px 500px;
-  background-color: yellow;
+  background-image: url("./assets/hero.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav {
