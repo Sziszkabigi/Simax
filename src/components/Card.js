@@ -78,9 +78,14 @@ const slopes = [
 console.log(slopes);
 
 const CardListItem = (props) => {
+  const imageUrl = "./assets/hero.jpg";
+
   return (
     <li>
       <div className="card-container">
+        <div className="background">
+          <img src={imageUrl} alt="" className="background-image" />
+        </div>
         <p>
           <strong>{props.slope.name}</strong>
         </p>
