@@ -81,14 +81,13 @@ const CardListItem = (props) => {
   return (
     <li>
       <div className="card-container">
-        <div className="background">
+        <div className="card-background">
           <img
+            className="card-image"
             src={"./assets/" + props.slope.image + ".jpg"}
             alt=""
-            className="background-image"
           />
         </div>
-
         <p>
           <strong>{props.slope.name}</strong>
         </p>
