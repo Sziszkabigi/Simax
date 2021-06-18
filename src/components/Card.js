@@ -88,12 +88,14 @@ const CardListItem = (props) => {
             alt=""
           />
         </div>
-        <p>
-          <strong>{props.slope.name}</strong>
-        </p>
-        <p>{props.slope.slopeElevation}</p>
-        <p>{props.slope.slopeLength}</p>
-        <p>{props.slope.price}</p>
+        <div className="card-content">
+          <p>
+            <strong>{props.slope.name}</strong>
+          </p>
+          <p>{props.slope.slopeElevation}</p>
+          <p>{props.slope.slopeLength}</p>
+          <p>{props.slope.price}</p>
+        </div>
       </div>
     </li>
   );

@@ -119,12 +119,15 @@ main {
   grid-auto-rows: 250px;
 }
 .card-background {
-  width: 10px;
-  height: 10px;
+  height: 100%;
 }
 .card-image {
   position: relative;
   height: 100%;
+}
+.card-content {
+  position: relative;
+  bottom: 170px;
 }
 
 /* ***** Emphasized ****** */
