@@ -17,9 +17,21 @@ function Footer() {
         </form>
       </div>
       <div className="footer-bottom">
-        <p>valami 1</p>
-        <p>valami 2</p>
-        <p>valami 3</p>
+        <div className="footer-logo">
+          <img
+            className="logo-image"
+            src="./assets/simax_mapmark_normal.svg"
+            alt="logo"
+            width="40px"
+          />
+        </div>
+        <div className="footer-menu">
+          <a href="">Rolunk</a>
+          <a href="">Impressum 2</a>
+          <a href="">Felhasznalasi feltetelek</a>
+        </div>
+
+        <p className="footer-copy">...@copyright</p>
       </div>
     </footer>
   );

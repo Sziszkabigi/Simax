@@ -169,9 +169,34 @@ main {
 /* ***** Emphasized ****** */
 
 .footer-top {
-  background-color: lightcyan;
+  height: 300px;
+  background-color: #ecf1ff;
 }
 
 .footer-bottom {
-  background-color: lightcoral;
+  background-color: #1a2543;
+  color: white;
+}
+
+.footer-logo {
+  height: 90px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.footer-menu {
+  height: 140px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.footer-menu a {
+  color: white;
+  margin: 10px;
+}
+.footer-copy {
+  height: 140px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
