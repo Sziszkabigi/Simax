@@ -138,14 +138,40 @@ main {
 }
 .emphasized-box {
   margin: 20px;
-  background-color: lightblue;
-  width: 600px;
+  /*background-color: lightblue;*/
+  width: 700px;
+  height: 200px;
   display: flex;
   align-items: center;
 }
 
+.emphasized-box h1 {
+  margin: 15px;
+}
+.emphasized-box p {
+  margin: 15px;
+}
+
 .emphasized-image {
-  width: 50%;
+  width: 70%;
+  height: 100%;
   display: flex;
   align-items: center;
+}
+
+.emp-b {
+  position: relative;
+  /* margin: 24px; */
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+/* ***** Emphasized ****** */
+
+.footer-top {
+  background-color: lightcyan;
+}
+
+.footer-bottom {
+  background-color: lightcoral;
 }
