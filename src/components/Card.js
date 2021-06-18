@@ -1,19 +1,104 @@
 import { React } from "react";
 
-function Card() {
+const slopes = [
+  {
+    id: 1,
+    name: "Alpe De Huez",
+    slopeElevation: "Diana Prince",
+    slopeLength: "hero",
+    price: "50EUR"
+  },
+  {
+    id: 2,
+    name: "Les Orres",
+    slopeElevation: "Pamela Lillian Isley",
+    slopeLength: "villain",
+    price: "50EUR"
+  },
+  {
+    id: 3,
+    name: "Briancon-Serre Chevaliers",
+    slopeElevation: "Dinah Drake",
+    slopeLength: "hero",
+    price: "50EUR"
+  },
+  {
+    id: 4,
+    name: "Catwoman",
+    slopeElevation: "Selina Kyle",
+    slopeLength: "villain",
+    price: "50EUR"
+  },
+  {
+    id: 5,
+    name: "Catwoman",
+    slopeElevation: "Selina Kyle",
+    slopeLength: "villain",
+    price: "50EUR"
+  },
+  {
+    id: 6,
+    name: "Catwoman",
+    slopeElevation: "Selina Kyle",
+    slopeLength: "villain",
+    price: "50EUR"
+  },
+  {
+    id: 7,
+    name: "Catwoman",
+    slopeElevation: "Selina Kyle",
+    slopeLength: "villain",
+    price: "50EUR"
+  },
+  {
+    id: 8,
+    name: "Catwoman",
+    slopeElevation: "Selina Kyle",
+    slopeLength: "villain",
+    price: "50EUR"
+  },
+  {
+    id: 9,
+    name: "Catwoman",
+    slopeElevation: "Selina Kyle",
+    slopeLength: "villain",
+    price: "50EUR"
+  }
+];
+
+console.log(slopes);
+
+const CardListItem = (props) => {
+  return (
+    <li>
+      <div className="card-container">
+        <p>
+          <strong>{props.slope.name}</strong>
+        </p>
+        <p>{props.slope.slopeElevation}</p>
+        <p>{props.slope.slopeLength}</p>
+        <p>{props.slope.price}</p>
+      </div>
+    </li>
+  );
+};
+
+const CardList = () => {
+  return (
+    <div className="x">
+      <ul style={{ listStyleType: "none" }}>
+        {slopes.map((slope) => {
+          return <CardListItem slope={slope} key={slope.id} />;
+        })}
+      </ul>
+    </div>
+  );
+};
+
+export default function Card() {
   return (
     <main>
-      <div className="card-item"> Main need's to be here</div>
-      <div className="card-item"> Main need's to be here</div>
-      <div className="card-item"> Main need's to be here</div>
-      <div className="card-item"> Main need's to be here</div>
-      <div className="card-item"> Main need's to be here</div>
-      <div className="card-item"> Main need's to be here</div>
-      <div className="card-item"> Main need's to be here</div>
-      <div className="card-item"> Main need's to be here</div>
-      <div className="card-item"> Main need's to be here</div>
+      <CardList />
     </main>
   );
 }
-
-export default Card;

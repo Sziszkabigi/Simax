@@ -26,14 +26,9 @@ header {
   grid-template:
     "logo nav " 50px/
     1fr 1fr;
-  /*background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(34, 153, 195, 1) 100%*/
 
-  background-image: linear-gradient(to bottom, #155b8aba, rgb(255 255 255 / 0%)),
+  background-image: linear-gradient(to bottom, #011621ba, rgb(60 54 54 / 45%)),
     url(./assets/hero.jpg);
-  height: 400px;
 
   /* background-image: url("./assets/hero.jpg"),
     linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(34, 153, 195, 1) 100%);
@@ -49,7 +44,7 @@ header {
 }
 
 /* *logo* */
-logo {
+.logo {
   margin-top: 20px;
   margin-left: 100px;
   color: white;
@@ -73,6 +68,7 @@ logo {
 .menu-item {
   margin: 10px;
   list-style: none;
+  text-transform: uppercase;
 }
 .menu-link {
   text-decoration: none;
@@ -86,11 +82,11 @@ logo {
   color: white;
 }
 .hero-content h1 {
-  marhin: 5px;
+  margin: 5px;
   font-size: 55px;
 }
 
-/* ***** Card ****** */
+/* ***** Filter ****** */
 
 .filter-menu {
   display: flex;
@@ -105,13 +101,22 @@ logo {
 /* ***** Card ****** */
 
 main {
+  height: 100%;
+}
+.card-container {
+  width: 80%;
+  height: 200px;
+  border: solid 3px black;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.x ul {
   background-color: pink;
   display: grid;
-  grid-area: "";
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  grid-auto-rows: 50px;
-  padding: 10px;
+  grid-auto-rows: 250px;
 }
 
 /* ***** Emphasized ****** */

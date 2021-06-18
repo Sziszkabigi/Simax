@@ -3,7 +3,7 @@ import { React } from "react";
 function Header() {
   return (
     <header>
-      <logo>
+      <a className="logo">
         <img
           className="logo-image"
           src="./assets/simax_mapmark_normal.svg"
@@ -11,7 +11,7 @@ function Header() {
           width="40px"
         />
         <span>Simax </span>
-      </logo>
+      </a>
       <nav>
         <ul className="menu">
           <li className="menu-item">
@@ -35,8 +35,8 @@ function Header() {
             </a>
           </li>
           <li className="menu-item">
-            <a className="menu-link" href="" target="_self" title="BIZTOSITAS">
-              BIZTOSITAS{" "}
+            <a className="menu-link" href="" target="_self" title="kapcsolat">
+              kapcsolat{" "}
             </a>
           </li>
         </ul>
