@@ -7,7 +7,7 @@ const slopes = [
     slopeElevation: "Diana Prince",
     slopeLength: "hero",
     price: "50EUR",
-    image: "url(./assets/hero.jpg)"
+    image: "hero"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const slopes = [
     slopeElevation: "Pamela Lillian Isley",
     slopeLength: "villain",
     price: "50EUR",
-    image: "url(./assets/hero.jpg)"
+    image: "hero"
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const slopes = [
     slopeElevation: "Dinah Drake",
     slopeLength: "hero",
     price: "50EUR",
-    image: "url(./assets/hero.jpg)"
+    image: "hero"
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const slopes = [
     slopeElevation: "Selina Kyle",
     slopeLength: "villain",
     price: "50EUR",
-    image: "url(./assets/hero.jpg)"
+    image: "hero"
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const slopes = [
     slopeElevation: "Selina Kyle",
     slopeLength: "villain",
     price: "50EUR",
-    image: "url(./assets/hero.jpg)"
+    image: "hero"
   },
   {
     id: 6,
@@ -47,7 +47,7 @@ const slopes = [
     slopeElevation: "Selina Kyle",
     slopeLength: "villain",
     price: "50EUR",
-    image: "url(./assets/hero.jpg)"
+    image: "hero"
   },
   {
     id: 7,
@@ -55,7 +55,7 @@ const slopes = [
     slopeElevation: "Selina Kyle",
     slopeLength: "villain",
     price: "50EUR",
-    image: "url(./assets/hero.jpg)"
+    image: "hero"
   },
   {
     id: 8,
@@ -63,7 +63,7 @@ const slopes = [
     slopeElevation: "Selina Kyle",
     slopeLength: "villain",
     price: "50EUR",
-    image: "url(./assets/hero.jpg)"
+    image: "hero"
   },
   {
     id: 9,
@@ -71,21 +71,24 @@ const slopes = [
     slopeElevation: "Selina Kyle",
     slopeLength: "villain",
     price: "50EUR",
-    image: "url(./assets/hero.jpg)"
+    image: "hero"
   }
 ];
 
 console.log(slopes);
 
 const CardListItem = (props) => {
-  const imageUrl = "./assets/hero.jpg";
-
   return (
     <li>
       <div className="card-container">
         <div className="background">
-          <img src={imageUrl} alt="" className="background-image" />
+          <img
+            src={"./assets/" + props.slope.image + ".jpg"}
+            alt=""
+            className="background-image"
+          />
         </div>
+
         <p>
           <strong>{props.slope.name}</strong>
         </p>
