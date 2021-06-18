@@ -1,4 +1,4 @@
-@import url: "./style.css";
+@import url "./style.css";
 
 * {
   margin: 0;
@@ -132,6 +132,20 @@ main {
 
 /* ***** Emphasized ****** */
 
+.emphasized-container {
+  display: flex;
+  justify-content: center;
+}
 .emphasized-box {
+  margin: 20px;
   background-color: lightblue;
+  width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.emphasized-image {
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
