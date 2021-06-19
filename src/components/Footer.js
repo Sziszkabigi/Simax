@@ -27,7 +27,7 @@ function Footer() {
         </div>
         <div className="footer-menu">
           <a href="">Rolunk</a>
-          <a href="">Impressum 2</a>
+          <a href="">Impressum</a>
           <a href="">Felhasznalasi feltetelek</a>
         </div>
 

@@ -95,6 +95,7 @@ header {
 }
 
 .filter-item {
+  display: flex;
   margin: 10px;
 }
 
