@@ -41,6 +41,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+
       <div className="hero-content">
         <h1>Szuperieur lejtok </h1>
         <h1>Szuperieur aron. </h1>

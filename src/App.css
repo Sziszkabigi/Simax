@@ -16,7 +16,7 @@
     150px 1fr 150px;
   /*grid-template-columns: 200px,1fr,200px; */
   /*grid-template-columns: repeat(3, 1fr) */
-  width: 100vw;
+  width: 100%;
   grid-gap: 5px;
 }
 /* ***** Header ****** */
@@ -28,19 +28,43 @@ header {
     1fr 1fr;
 
   background-image: linear-gradient(to bottom, #011621ba, rgb(60 54 54 / 45%)),
-    url(./assets/hero.jpg);
+    url("./assets/simax_home_cover.svg"), url("./assets/hero.jpg");
 
   /* background-image: url("./assets/hero.jpg"),
     linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(34, 153, 195, 1) 100%);
   /* url("./assets/simax_home_cover.svg"), url("./assets/hero.jpg")*/
 
-  height: 400px;
-  background-position: 40% 40%;
-  background-repeat: /*no-repeat,*/ no repeat;
-  background-size: /*cover, */ cover;
+  height: 522px;
+
+  /*background-position: 0% 0% 0% 0%; */
+  background-repeat: /*no-repeat,*/ no repeat, no repeat;
+  /*background-size: /*cover, center;*/
 
   /*background: url("./assets/simax_home_cover.svg") right bottom no-repeat , url("./assets/hero.jpg") left top repeat;
   height: 400px;*/
+  background-position: left, center;
+  background-position-x: -90%, 0% 0%;
+  background-position-y: 0%;
+  background-repeat: no-repeat, repeat;
+  opacity: 0%, 90%;
+}
+
+/*.nav {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 5.8%;
+  z-index: 10;
+  width: 1400px;
+  height: 522px;
+  background: url(./assets/hero.jpg);
+  height: 522px;
+  width: 100%;
+  background-attachment: inherit;
+  background-position: 10% 40%;
+  background-repeat:  no repeat;
+  background-size:  cover;
 }
 
 /* *logo* */
@@ -85,6 +109,11 @@ header {
   margin: 5px;
   font-size: 55px;
 }
+/*.pink{
+  opacity: 50%;
+  position:relative;
+ 
+} /*
 
 /* ***** Filter ****** */
 
@@ -92,52 +121,134 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 933px;
+  height: 71px;
 }
-
+.filter-1 {
+  color: #0f206c;
+}
 .filter-item {
   display: flex;
   margin: 10px;
+}
+.filter-item li {
+  list-style: none;
+  margin: 10px;
+}
+
+.filter-item label {
+  align-items: center;
+}
+
+.filter-item label input {
+  width: 18px;
+  height: 18px;
+}
+.filter-item label input {
+  position: relative;
+  top: 3px;
+  margin: 5px;
+  align-items: center;
 }
 
 /* ***** Card ****** */
 
 main {
-  height: 100%;
+  display: grid;
+  justify-content: center;
+  width: 90%;
+  margin-top: 10px;
+  /*grid-template:
+    /*"header" header heade 50px
+    "main main main " 1fr
+    "footer footer footer" 50px /
+    150px 1fr 150px;
+   /*grid-template-columns: 200px,1fr,200px; */
+  /*grid-template-columns: repeat(3, 1fr) */
 }
 .card-container {
   width: 80%;
-  height: 200px;
-  border: solid 3px black;
-  margin: 10px auto;
-  text-align: center;
+  /* border: solid 3px black; */
+  margin: center;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin: auto;
 }
 
 .x ul {
-  background-color: pink;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 372px;
   grid-gap: 10px;
-  grid-auto-rows: 250px;
+  /* grid-auto-rows: 384px; */
 }
 .card-background {
-  height: 100%;
+  filter: grayscale(100%);
 }
+
 .card-image {
   position: relative;
-  height: 100%;
+  width: 360px;
+  height: 312px;
 }
+.card-background:hover {
+  filter: none;
+}
+
 .card-content {
+  width: 350px;
+  text-align: center;
+}
+/*.card-content p {
+  display: grid;
+  justify-content: center;
   position: relative;
-  bottom: 170px;
+  bottom: 190px;
+  color: white;
+}*/
+.card-place {
+  display: grid;
+  justify-content: center;
+  margin: 10px 0 10px 0px;
+  position: relative;
+  bottom: 300px;
+  color: white;
+}
+.card-details {
+  display: grid;
+  justify-content: center;
+  position: relative;
+  bottom: 250px;
+  color: white;
+}
+
+.card-price {
+  position: relative;
+  bottom: 240px;
+  color: white;
+  position: relative;
+  bottom: 180px;
+}
+.card-content hr {
+  border: 0.1px solid #ff1044;
+  width: 60px;
+  margin: 5px;
+  text-align: center;
 }
 
 /* ***** Emphasized ****** */
 
 .emphasized-container {
-  display: flex;
   justify-content: center;
+  display: grid;
+  margin: 50px;
 }
 .emphasized-box {
+  display: grid;
   margin: 20px;
   /*background-color: lightblue;*/
   width: 700px;

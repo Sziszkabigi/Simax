@@ -4,72 +4,72 @@ const slopes = [
   {
     id: 1,
     name: "Alpe De Huez",
-    slopeElevation: "Diana Prince",
-    slopeLength: "hero",
+    slopeElevation: "1124-3538 m",
+    slopeLength: "250 km",
     price: "50EUR",
     image: "hero"
   },
   {
     id: 2,
     name: "Les Orres",
-    slopeElevation: "Pamela Lillian Isley",
-    slopeLength: "villain",
+    slopeElevation: "1024-2838 m",
+    slopeLength: "100km",
     price: "50EUR",
     image: "hero"
   },
   {
     id: 3,
     name: "Briancon-Serre Chevaliers",
-    slopeElevation: "Dinah Drake",
-    slopeLength: "hero",
+    slopeElevation: "836-19768 m",
+    slopeLength: "100km",
     price: "50EUR",
     image: "hero"
   },
   {
     id: 4,
     name: "Catwoman",
-    slopeElevation: "Selina Kyle",
-    slopeLength: "villain",
+    slopeElevation: "1024-2838 m",
+    slopeLength: "100km",
     price: "50EUR",
     image: "hero"
   },
   {
     id: 5,
     name: "Catwoman",
-    slopeElevation: "Selina Kyle",
-    slopeLength: "villain",
+    slopeElevation: "1024-2838 m",
+    slopeLength: "100km",
     price: "50EUR",
     image: "hero"
   },
   {
     id: 6,
     name: "Catwoman",
-    slopeElevation: "Selina Kyle",
-    slopeLength: "villain",
+    slopeElevation: "1024-2838 m",
+    slopeLength: "100km",
     price: "50EUR",
     image: "hero"
   },
   {
     id: 7,
     name: "Catwoman",
-    slopeElevation: "Selina Kyle",
-    slopeLength: "villain",
+    slopeElevation: "1000-2436 m",
+    slopeLength: "140km",
     price: "50EUR",
     image: "hero"
   },
   {
     id: 8,
     name: "Catwoman",
-    slopeElevation: "Selina Kyle",
-    slopeLength: "villain",
+    slopeElevation: "824-2838 m",
+    slopeLength: "100km",
     price: "50EUR",
     image: "hero"
   },
   {
     id: 9,
     name: "Catwoman",
-    slopeElevation: "Selina Kyle",
-    slopeLength: "villain",
+    slopeElevation: "6024-2838 m",
+    slopeLength: "160km",
     price: "50EUR",
     image: "hero"
   }
@@ -89,12 +89,22 @@ const CardListItem = (props) => {
           />
         </div>
         <div className="card-content">
-          <p>
+          <h1 className="card-place">
             <strong>{props.slope.name}</strong>
-          </p>
-          <p>{props.slope.slopeElevation}</p>
-          <p>{props.slope.slopeLength}</p>
-          <p>{props.slope.price}</p>
+          </h1>
+          <div className="card-details">
+            <hr />
+            <div className="details">
+              <img src="./assets/simax_tile_magassag.svg" alt="" />
+              <p>{props.slope.slopeElevation}</p>
+            </div>
+            <div className="details">
+              <img src="./assets/simax_tile_magassag.svg" alt="" />
+              <p>{props.slope.slopeLength}</p>
+            </div>
+            <hr />
+          </div>
+          <h1 className="card-price"> {props.slope.price}</h1>
         </div>
       </div>
     </li>

@@ -4,12 +4,13 @@ const Checkbox = (props) => <input type="checkbox" {...props} />;
 
 function Filter() {
   state = { checked: false };
-  handleCheckboxChange = (event) =>
-    this.setState({ checked: event.target.checked });
+  //handleCheckboxChange = (event) =>
+  //this.setState({ checked: event.target.checked });
+
   return (
     <div className="filter-menu">
-      <div>
-        <p>12</p>
+      <div className="filter-1">
+        <h1>12</h1>
         <p>Siterep</p>
       </div>
       <div className="filter-item">
@@ -19,7 +20,7 @@ function Filter() {
             <label>
               <Checkbox
                 checked={this.state.checked}
-                onChange={this.handleCheckboxChange}
+                //onChange={this.handleCheckboxChange}
               />
               <span>Dragabb</span>
             </label>
@@ -28,7 +29,7 @@ function Filter() {
             <label>
               <Checkbox
                 checked={this.state.checked}
-                onChange={this.handleCheckboxChange}
+                //onChange={this.handleCheckboxChange}
               />
               <span>Olcsobb</span>
             </label>{" "}
@@ -36,13 +37,13 @@ function Filter() {
         </ul>
       </div>
       <div className="filter-item">
-        <img src="./assets/simax_filter_euro.svg" alt="" />
+        <img src="./assets/simax_filter_hossz.svg" alt="" />
         <ul>
           <li>
             <label>
               <Checkbox
                 checked={this.state.checked}
-                onChange={this.handleCheckboxChange}
+                //onChange={this.handleCheckboxChange}
               />
               <span>Hosszabb</span>
             </label>
@@ -51,7 +52,7 @@ function Filter() {
             <label>
               <Checkbox
                 checked={this.state.checked}
-                onChange={this.handleCheckboxChange}
+                //onChange={this.handleCheckboxChange}
               />
               <span>Rovidebb</span>
             </label>{" "}
@@ -59,13 +60,13 @@ function Filter() {
         </ul>
       </div>
       <div className="filter-item">
-        <img src="./assets/simax_filter_euro.svg" alt="" />
+        <img src="./assets/simax_filter_magassag.svg" alt="" />
         <ul>
           <li>
             <label>
               <Checkbox
                 checked={this.state.checked}
-                onChange={this.handleCheckboxChange}
+                //onChange={this.handleCheckboxChange}
               />
               <span>Magasabb</span>
             </label>
@@ -74,7 +75,7 @@ function Filter() {
             <label>
               <Checkbox
                 checked={this.state.checked}
-                onChange={this.handleCheckboxChange}
+                //onChange={this.handleCheckboxChange}
               />
               <span>Alacsonyabb</span>
             </label>{" "}
