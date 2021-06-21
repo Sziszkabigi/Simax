@@ -19,7 +19,7 @@ const slopes = [
   },
   {
     id: 3,
-    name: "Briancon-Serre Chevaliers",
+    name: "Briancon-Serre",
     slopeElevation: "836-19768 m",
     slopeLength: "100km",
     price: "50EUR",
