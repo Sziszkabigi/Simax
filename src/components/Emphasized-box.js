@@ -6,7 +6,7 @@ function EmphasizedBox() {
       <div className="emphasized-box">
         <img className="emphasized-image" src="./assets/hero.jpg" alt="" />
         <div>
-          <h1> Advertisement card </h1>
+          <h1> Nincs tarsasagod de Franciaorszagba vagysz? </h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -15,11 +15,11 @@ function EmphasizedBox() {
             only five centuries, but also the leap into electroni
           </p>
           <button
-            classNAme="emp-b"
+            id="emp-b"
             type="button"
-            class="btn btn-outline-secondary"
+            className="btn btn-outline-secondary"
           >
-            Secondary
+            Megnezem
           </button>
         </div>
       </div>

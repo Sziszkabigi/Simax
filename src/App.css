@@ -125,10 +125,8 @@ header {
 /* ***** Filter ****** */
 
 .filter-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
+  margin: 30px;
+  display: grid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,6 +166,7 @@ main {
   display: grid;
   justify-content: center;
   width: 90%;
+  height: 100%;
   margin-top: 10px;
   /*grid-template:
     /*"header" header heade 50px
@@ -179,8 +178,9 @@ main {
 }
 .card-container {
   width: 80%;
+  height: 380px;
   /* border: solid 3px black; */
-  margin: center;
+
   /* margin-left: auto; */
   /* margin-right: auto; */
   margin: auto;
@@ -189,7 +189,7 @@ main {
 .x ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 372px;
+  grid-template-rows: 380px;
   grid-gap: 10px;
   /* grid-auto-rows: 384px; */
 }
@@ -261,39 +261,43 @@ main {
 /* ***** Emphasized ****** */
 
 .emphasized-container {
+  display: grid;
   justify-content: center;
   display: grid;
   margin: 50px;
 }
 .emphasized-box {
-  display: grid;
-  margin: 20px;
-  /*background-color: lightblue;*/
-  width: 700px;
-  height: 200px;
   display: flex;
-  align-items: center;
+  /* background-color: lightblue; */
+  height: 400px;
+  max-width: 1125px;
+
+  justify-content: center;
 }
 
 .emphasized-box h1 {
   margin: 15px;
 }
+
 .emphasized-box p {
   margin: 15px;
 }
 
 .emphasized-image {
-  width: 70%;
-  height: 100%;
-  display: flex;
-  align-items: center;
+  height: 355px;
+  width: 654px;
 }
 
-.emp-b {
+#emp-b {
   position: relative;
   /* margin: 24px; */
   margin-left: 15px;
   margin-bottom: 15px;
+  height: 45px;
+  width: 119px;
+  border: NaNpx solid #cfcfcf;
+  background-color: #ffffff;
+  text-transform: uppercase;
 }
 
 /* ***** Emphasized ****** */

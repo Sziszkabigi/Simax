@@ -27,7 +27,7 @@ const slopes = [
   },
   {
     id: 4,
-    name: "Catwoman",
+    name: "Grand MAssif",
     slopeElevation: "1024-2838 m",
     slopeLength: "100km",
     price: "50EUR",
@@ -35,7 +35,7 @@ const slopes = [
   },
   {
     id: 5,
-    name: "Catwoman",
+    name: "Grand MAssif",
     slopeElevation: "1024-2838 m",
     slopeLength: "100km",
     price: "50EUR",
@@ -43,7 +43,7 @@ const slopes = [
   },
   {
     id: 6,
-    name: "Catwoman",
+    name: "Grand MAssif",
     slopeElevation: "1024-2838 m",
     slopeLength: "100km",
     price: "50EUR",
@@ -51,7 +51,7 @@ const slopes = [
   },
   {
     id: 7,
-    name: "Catwoman",
+    name: "Grand MAssif",
     slopeElevation: "1000-2436 m",
     slopeLength: "140km",
     price: "50EUR",
@@ -59,7 +59,7 @@ const slopes = [
   },
   {
     id: 8,
-    name: "Catwoman",
+    name: "Grand MAssif",
     slopeElevation: "824-2838 m",
     slopeLength: "100km",
     price: "50EUR",
@@ -67,7 +67,7 @@ const slopes = [
   },
   {
     id: 9,
-    name: "Catwoman",
+    name: "Grand MAssif",
     slopeElevation: "6024-2838 m",
     slopeLength: "160km",
     price: "50EUR",
