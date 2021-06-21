@@ -324,10 +324,12 @@ main {
   font-weight: bold;
 }
 
-footer-content {
-  display: flex;
+.footer-content {
   justify-content: center;
-  height: 38px;
+  display: inline;
+  /* display: flex; */
+  /* justify-content: center; */
+  height: 111px;
   width: 458px;
 }
 
@@ -357,13 +359,18 @@ input::placeholder {
 .footer-bottom {
   background-color: #1a2543;
   color: white;
+  height: 296px;
 }
 
 .footer-logo {
-  height: 90px;
+  height: 178px;
   display: flex;
   align-content: center;
   justify-content: center;
+}
+.footer-logo img {
+  height: 64px;
+  width: 46px;
 }
 .footer-menu {
   height: 140px;
@@ -372,8 +379,12 @@ input::placeholder {
   justify-content: center;
 }
 .footer-menu a {
-  color: white;
+  text-decoration: none;
+  color: #ffffff;
   margin: 10px;
+  font-family: OpenSansCondensed;
+  font-size: 18px;
+  font-weight: 300;
 }
 .footer-copy {
   height: 140px;

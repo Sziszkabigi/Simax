@@ -4,13 +4,14 @@ function Footer() {
   return (
     <footer>
       <div className="footer-top">
-        <h1>Maradj Fokuszban</h1>
         <div className="footer-content">
+          <h1>Maradj Fokuszban</h1>
           <p>
             Szeretnel idoben ertesulni a kedvenc szallashelyeidrol? iratkozz fel
             hirlevelunkre, es ne aggodj nem szemeteljuk tele a tarhelyed ....
           </p>
         </div>
+
         <form>
           <label className="email">
             <input type="text" email="email" placeholder="Email cimed..." />
@@ -18,6 +19,7 @@ function Footer() {
           <input className="submit" type="submit" value="Kuldes" />
         </form>
       </div>
+
       <div className="footer-bottom">
         <div className="footer-logo">
           <img
@@ -33,7 +35,7 @@ function Footer() {
           <a href=""> Felhasznalasi feltetelek </a>
         </div>
 
-        <p className="footer-copy">...@copyright</p>
+        <p className="footer-copy">@2015,Simax</p>
       </div>
     </footer>
   );
