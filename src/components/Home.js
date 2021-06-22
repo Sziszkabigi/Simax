@@ -1,6 +1,6 @@
 import { React } from "react";
 import "../App.css";
-import Header from "./Header.js";
+import Hero from "./Hero.js";
 import Filter from "./Filter.js";
 import Card from "./Card.js";
 import EmphasizedBox from "./Emphasized-box.js";
@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="Home">
       <div className="container">
-        <Header />
+        <Hero />
         <Filter />
         <Card />
         <EmphasizedBox />

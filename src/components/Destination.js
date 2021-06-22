@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default class MyProfile extends React.Component {
+export default class Destination extends React.Component {
   render() {
     return (
       <div>

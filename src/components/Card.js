@@ -84,7 +84,7 @@ const CardListItem = (props) => {
       <div className="card-container">
         <div>
           <h1>Home page</h1>
-          <Link to="/profile">Go to my profile</Link>
+          <Link to="/destination">Go to my slopes</Link>
         </div>
         <div className="card-background">
           <img

@@ -7,7 +7,7 @@
 
 import React from "react";
 import Home from "./components/Home.js";
-import MyProfile from "./components/MyProfile.js";
+import Destination from "./components/Destination.js";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 
@@ -17,7 +17,7 @@ export default class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <Route path="/" exact component={Home} />
-          <Route path="/profile" exact component={MyProfile} />
+          <Route path="/destination" exact component={Destination} />
         </div>
       </BrowserRouter>
     );
