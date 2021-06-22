@@ -3,7 +3,10 @@ import Triangle from "./Triangle.js";
 
 function Hero() {
   return (
-    <div>
+    <div className="hero-container">
+      <div className="svg-cover">
+        <Triangle width={900} height={522} fill="#FF1044" />
+      </div>
       <header>
         <a className="logo">
           <img
@@ -44,14 +47,7 @@ function Hero() {
           </ul>
         </nav>
       </header>
-      <div className="svg-cover">
-        <Triangle
-          width={900}
-          height={522}
-          fill="
-#FF1044"
-        />
-      </div>
+
       <div className="hero-content">
         <h1>Szuperieur lejtok </h1>
         <h1>Szuperieur aron. </h1>

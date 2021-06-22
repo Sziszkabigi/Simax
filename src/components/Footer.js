@@ -4,20 +4,23 @@ function Footer() {
   return (
     <footer>
       <div className="footer-top">
-        <div className="footer-content">
-          <h1>Maradj Fokuszban</h1>
-          <p>
-            Szeretnel idoben ertesulni a kedvenc szallashelyeidrol? iratkozz fel
-            hirlevelunkre, es ne aggodj nem szemeteljuk tele a tarhelyed ....
-          </p>
-        </div>
+        <div className="footer-container">
+          <div className="footer-content">
+            <h1>Maradj Fokuszban</h1>
+            <p>
+              Szeretnel idoben ertesulni a kedvenc szallashelyeidrol? iratkozz
+              fel hirlevelunkre, es ne aggodj nem szemeteljuk tele a tarhelyed
+              ....
+            </p>
+          </div>
 
-        <form>
-          <label className="email">
-            <input type="text" email="email" placeholder="Email cimed..." />
-          </label>
-          <input className="submit" type="submit" value="Kuldes" />
-        </form>
+          <form>
+            <label className="email">
+              <input type="text" email="email" placeholder="Email cimed..." />
+            </label>
+            <input className="submit" type="submit" value="Kuldes" />
+          </form>
+        </div>
       </div>
 
       <div className="footer-bottom">

@@ -33,7 +33,7 @@ header {
     1fr 1fr;
 
   background-image: linear-gradient(to bottom, #011621ba, rgb(60 54 54 / 45%)),
-    url("./assets/simax_home_cover.svg"), url("./assets/hero.jpg");
+    url("./assets/hero.jpg");
 
   /* background-image: url("./assets/hero.jpg"),
     linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(34, 153, 195, 1) 100%);
@@ -41,40 +41,15 @@ header {
 
   height: 522px;
 
-  /*background-position: 0% 0% 0% 0%; */
-  background-repeat: /*no-repeat,*/ no repeat, no repeat;
-  /*background-size: /*cover, center;*/
-
-  /*background: url("./assets/simax_home_cover.svg") right bottom no-repeat , url("./assets/hero.jpg") left top repeat;
-  height: 400px;*/
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: left, center;
-  background-position-x: -90%, 0% 0%;
-  background-position-y: 0%;
-  background-repeat: no-repeat, repeat;
-  opacity: 0%, 90%;
+  background-position-y: 20%;
 }
 
-/*.nav {
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  opacity: 5.8%;
-  z-index: 10;
-  width: 1400px;
-  height: 522px;
-  background: url(./assets/hero.jpg);
-  height: 522px;
-  width: 100%;
-  background-attachment: inherit;
-  background-position: 10% 40%;
-  background-repeat:  no repeat;
-  background-size:  cover;
-}
-
-/* *logo* */
+/******* *logo* ********/
 .logo {
-  margin-top: 20px;
+  margin-top: 15px;
   margin-left: 100px;
   color: white;
   font-size: 30px;
@@ -104,10 +79,14 @@ header {
   color: white;
   font-weight: bold;
 }
+.hero-container {
+  height: 522px;
+  width: 100%;
+}
 .hero-content {
   position: relative;
-  top: -50%;
-  left: 25%;
+  top: -67%;
+  left: 30%;
   color: #ffffff;
 }
 .hero-content h1 {
@@ -116,17 +95,18 @@ header {
   font-weight: 800px;
   text-transform: uppercase;
 }
+.hero-content p {
+  position: relative;
+  left: 10%;
+  top: 40px;
+}
 
 svg {
   position: absolute;
   top: 0;
   left: 20%;
+  opacity: 0.6;
 }
-/*.pink{
-  opacity: 50%;
-  position:relative;
- 
-} /*
 
 /* ***** Filter ****** */
 
@@ -329,6 +309,10 @@ main {
   font-weight: bold;
 }
 
+.footer-container {
+  width: 620px;
+}
+
 .footer-content {
   justify-content: center;
   display: inline;
@@ -336,6 +320,9 @@ main {
   /* justify-content: center; */
   height: 111px;
   width: 458px;
+}
+.footer-content p {
+  padding: 20px;
 }
 
 input::placeholder {
@@ -368,12 +355,13 @@ input::placeholder {
 }
 
 .footer-logo {
-  height: 178px;
+  height: 138px;
   display: flex;
   align-content: center;
   justify-content: center;
 }
 .footer-logo img {
+  margin-top: 25px;
   height: 64px;
   width: 46px;
 }
@@ -390,7 +378,9 @@ input::placeholder {
   font-size: 18px;
   font-weight: 300;
 }
+
 .footer-copy {
+  margin-top: 50px;
   display: flex;
   align-content: center;
   justify-content: center;
