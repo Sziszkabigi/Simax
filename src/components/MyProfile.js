@@ -6,7 +6,7 @@ export default class MyProfile extends React.Component {
     return (
       <div>
         <h1>This is my profile</h1>
-        <Link to="/">Go back to home</Link>
+        <Link to="/">Go back to App</Link>
       </div>
     );
   }
